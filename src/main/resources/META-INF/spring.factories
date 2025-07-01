@@ -1,0 +1,2 @@
+# Auto-Configuration ???? Spring Boot? ??
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.ontwo.coreevent.config.EventDatasourceAutoConfiguration

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: core-event
+  profiles:
+    active: sta #stand-alone setting
+
+---
+spring:
+  config:
+    activate:
+      on-profile: sta
+
+event:
+  datasource:
+    url: jdbc:h2:mem:coreeventdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    ddl-auto: create-drop
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    format-sql: false
+  threads:
+    basic:
+      core-size: 2
+      max-size: 2
+      queue-capacity: 1000
