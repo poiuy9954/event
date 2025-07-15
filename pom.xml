@@ -112,7 +112,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>com.ontwo.coreevent.CoreEventApplication</mainClass>
+                    <mainClass>com.kims.coreevent.CoreEventApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
